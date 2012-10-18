@@ -1,0 +1,33 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .brand-icon
+      %a.brand{:href => "/"}
+        %img{:src => "/ab_theme/img/user2_logo.png"}
+    %ul#mynav.nav
+      %li
+        %a{:href => "/#projects"}
+          Recent Projects
+      %li.divider-vertical
+      %li
+        %a{:href =>"/#skills"}
+          Skills & Talents
+      %li.divider-vertical
+      %li
+        %a{:href =>"/#bio"}
+          Bio & Resources
+      %li.divider-vertical
+      %li.active.dropdown
+        %a#drop1.dropdown-toggle(href="/blog" data-target="#" data-toggle="dropdown")
+          Blog
+          %b.caret
+        %ul.dropdown-menu(role="menu" aria-labelledby="drop1")
+          %li
+            %a(tableindex="-1" href="/blog")
+              Blog Home
+          %li
+            %a(tableindex="-1" href="blog/articles")
+              All Posts
+          %li
+            %a(tableindex="-1" href="blog/articles")
+              Learning to Code
+
