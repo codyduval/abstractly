@@ -4,30 +4,37 @@
       %a.brand{:href => "/"}
         %img{:src => "/ab_theme/img/user2_logo.png"}
     %ul#mynav.nav
+      %li.divider-vertical
       %li
-        %a{:href => "/#projects"}
+        %a{:href => "/index#projects"}
           Recent Projects
       %li.divider-vertical
       %li
-        %a{:href =>"/#skills"}
+        %a{:href =>"/index#skills"}
           Skills & Talents
       %li.divider-vertical
       %li
-        %a{:href =>"/#bio"}
+        %a{:href =>"/index#bio"}
           Bio & Resources
       %li.divider-vertical
-      %li.active.dropdown
-        %a#drop1.dropdown-toggle(href="/blog" data-target="#" data-toggle="dropdown")
+      %li
+        %a{:href =>"/blog"}
           Blog
-          %b.caret
-        %ul.dropdown-menu(role="menu" aria-labelledby="drop1")
-          %li
-            %a(tableindex="-1" href="/blog")
-              Blog Home
-          %li
-            %a(tableindex="-1" href="blog/articles")
-              All Posts
-          %li
-            %a(tableindex="-1" href="blog/articles")
-              Learning to Code
+      %li.divider-vertical
+
+
+      / %li.active.dropdown
+      /   %a#drop1.dropdown-toggle(href="/blog" data-target="#" data-toggle="dropdown")
+      /     Blog
+      /     %b.caret
+      /   %ul.dropdown-menu(role="menu" aria-labelledby="drop1")
+      /     %li
+      /       %a(tableindex="-1" href="/blog")
+      /         Blog Home
+      /     %li
+      /       %a(tableindex="-1" href="blog/articles")
+      /         All Posts
+      /     %li
+      /       %a(tableindex="-1" href="blog/articles")
+      /         Learning to Code
 

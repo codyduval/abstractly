@@ -1,34 +1,47 @@
 %script{:type => "text/javascript",
         :src  => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
 
-%script{:type => "text/javascript",
-        :src  => "/ab_theme/js/bootstrap.js"}
+/ %script{:type => "text/javascript",
+/         :src  => "/ab_theme/js/bootstrap.js"}
 
-%script{:type => "text/javascript",
-        :src  => "/ab_theme/js/jquery.easing.js"}
 
-%script{:type => "text/javascript",
-        :src  => "/ab_theme/js/chirp.min.js"}
+/ %script{:type => "text/javascript"}
+/   (function($){
 
-%script{:type => "text/javascript"}
-  Chirp({
-  user: 'codee',      //Twitter username
-  max: 2,           //Maximum number of tweets to show 
-  count: 10,          //Total tweets to retrieve
-  retweets: true,       //Show/Don't show retweets
-  replies: false,       //Show/Don't show replies
-  cacheExpire: 1000 * 60 * 2, //Number of milliseconds to cache tweets
-  target: 'tweets'
-  })
+/   var jump=function(e)
+/   {
+/   if (e){
+/   e.preventDefault();
+/   var target = $(this).attr("href");
+/   }else{
+/   var target = location.hash;
+/   }
+/   console.log(target)
+/   $('html,body').animate(
+/   {
+/   scrollTop: $(target).offset().top
+/   },1000,function()
+/   {
+/   location.hash = target;
+/   });
 
-%script{:type => "text/javascript"}
-  $(function() {
-  $('ul#mynav a').bind('click',function(event){
-  var $anchor = $(this);
-  $('html, body').stop().animate({
-  scrollTop: $($anchor.attr('href')).offset().top + -20
-  }, 750,'easeInOutCirc');
-  event.preventDefault();
-  });
-  });
+/   }
+
+/   $('html, body').hide()
+
+/   $(document).ready(function()
+/   {
+/   $('ul#mynav li a').bind("click", jump);
+
+/   if (location.hash){
+/   setTimeout(function(){
+/   $('html, body').scrollTop(0).show()
+/   jump()
+/   }, 0);
+/   }else{
+/   $('html, body').show()
+/   }
+/   });
+
+/   })(jQuery)
 

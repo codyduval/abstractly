@@ -13,11 +13,10 @@
     %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
     = haml :analytics, :layout => false
   %body{"data-spy" => "scroll", "data-target" => ".navbar", "data-offset" => "30",:class => @body_class }
-    = haml :nav_blog, :layout => false
+    = haml :nav, :layout => false
+    = haml :header, :layout => false
     #main-wrapper
-      .container.span3
-        = haml :sidebar, :layout => false
-      .container.span9
+      .container
         = yield
-      = haml :footer, :layout => false
-  = haml :js, :layout => false
+        = haml :home_footer, :layout => false
+    = haml :js, :layout => false

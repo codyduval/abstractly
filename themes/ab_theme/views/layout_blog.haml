@@ -20,9 +20,10 @@
     = haml :analytics, :layout => false
   %body(data-spy="scroll" data-target=".navbar" data-offset="30")
     = haml :nav_blog, :layout => false
-    = haml :header_blog, :layout => false
     #main-wrapper
       .container
-        = yield
-        = haml :footer, :layout => false
+        = haml :sidebar, :layout => false
+      .container
+        = yield 
+      = haml :footer, :layout => false
     = haml :js, :layout => false

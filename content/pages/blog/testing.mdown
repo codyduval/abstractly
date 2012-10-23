@@ -1,0 +1,5 @@
+# All About Testing
+
+This is a category page that is all about testing. It's a test.
+
+[docs]: http://nestacms.com/docs/design
