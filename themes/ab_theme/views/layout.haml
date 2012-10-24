@@ -21,9 +21,7 @@
   %body{"data-spy" => "scroll", "data-target" => ".navbar", "data-offset" => "30",:class => @body_class }
     = haml :nav_blog, :layout => false
     #main-wrapper
-      .container.span4
-        = haml :sidebar, :layout => false
-      .container.span8
-        = yield 
+      = haml :sidebar, :layout => false
+      = yield 
     = haml :footer, :layout => false
     = haml :js_blog, :layout => false

@@ -96,16 +96,11 @@
 
 #sidebar {
   margin-top: 85px;
-  margin-left: 25px;
   margin-right: 25px;
-  // width: 200px;
+  margin-left: 15px;
   padding: 1%;
-  // position: fixed;
   position: relative;
-  // z-index: 1;
   min-height: 100%;
-  min-width: 200px;
-  padding-right:25px;
 
 }
 
@@ -140,7 +135,7 @@
   min-height: 900px;
   padding-top:55px;
   padding-left: 40px;
-  min-width: 25em;
+  min-width: 20em;
   max-width: 33em;
   font-size: 15px;
   line-height: 23px;
@@ -238,8 +233,4 @@ h1.hellabig {
 
 #colophone {
   text-align: center;
-}
-
-.footer {
-  background-color:black;
 }
