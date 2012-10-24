@@ -18,10 +18,12 @@
     - local_stylesheet_link_tag('local')
     %link(href="#{url('/articles.xml')}" rel="alternate" type="application/atom+xml")
     = haml :analytics, :layout => false
-  %body(data-spy="scroll" data-target=".navbar" data-offset="30")
+  %body{"data-spy" => "scroll", "data-target" => ".navbar", "data-offset" => "30",:class => @body_class }
     = haml :nav_blog, :layout => false
     #main-wrapper
-      = haml :sidebar, :layout => false
-      = yield 
-      = haml :footer, :layout => false
+      .container.span4
+        = haml :sidebar, :layout => false
+      .container.span8
+        = yield 
+    = haml :footer, :layout => false
     = haml :js_blog, :layout => false

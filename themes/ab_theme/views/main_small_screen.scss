@@ -1,0 +1,245 @@
+#hero {
+  position             : fixed;
+  top                  : 0;
+  width                : 100%;
+  background-attachment: scroll;
+  background-clip      : border-box;
+  background-color     : #323232;
+  background-image     : url('../ab_theme/img/heroBack.jpg');
+  background-origin    : padding-box;
+  background-position  : 0 0;
+  background-repeat    : repeat;
+  background-size      : auto auto;
+  margin               : 0px;
+  padding-top          : 100px;
+  z-index              : -1;
+  
+}
+#hero-inner {
+  margin-top: 5px;
+  height    : 300px;
+}
+
+#overview {
+  padding-top   : 0px;
+  padding-bottom: 0px;
+  height        : 350px;
+}
+
+.accordion-inner {
+  background: #FBFAF7;
+}
+
+.hella-big {
+  font-size  : 80px;
+  color      : #2d2d2d;
+  font-weight: bold;
+}
+
+.accordion-heading {
+  background: #F5F5F5;
+}
+
+
+.main-logo {
+  padding-left:70px;
+}
+
+
+#graph-caption-header {
+  text-decoration:underline;
+  text-align     :center;
+}
+
+.brand-icon {
+  margin-left:5px;
+  position   :relative;
+  bottom     :-8px;
+}
+
+@media (max-width: 979px) {
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom {
+  position: fixed;
+  }
+ }
+
+ .headshot {
+  display              : block;
+  padding              : 0;
+  margin-right         : 20px;
+  line-height          : 21px;
+  border               : 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  border-radius        : 4px;
+  -webkit-box-shadow   : 0 0 24px #bbb;
+  -moz-box-shadow      : 0 0 24px #bbb;
+  box-shadow           : 0 0 24px #bbb;
+ }
+
+ #main-wrapper {
+  background-image: url('../ab_theme/img/lightpaperfibers.png');
+ }
+
+ .well {
+  -webkit-box-shadow: 0 0 24px #bbb;
+  -moz-box-shadow   : 0 0 24px #bbb;
+  box-shadow        : 0 0 24px #bbb;
+ }
+
+#sidebar {
+  margin-top: 85px;
+  margin-left: 25px;
+  margin-right: 25px;
+  // width: 200px;
+  padding: 1%;
+  // position: fixed;
+  position: relative;
+  // z-index: 1;
+  min-height: 100%;
+  min-width: 200px;
+  padding-right:25px;
+
+}
+
+#sidebar ul {
+  list-style: none;
+  margin: 0 0 0 1.25em;
+}
+
+#sidebar h2 a{
+  color: #2d2d2d;
+}
+
+#sidebar a {
+  text-decoration: none;
+}
+
+#sidebar p {
+  line-height: 18px;
+  margin: 0 0 0 1em;
+}
+
+
+#main-content {
+  // margin-left: 27%;
+  // min-width: 658px;
+  position: relative;
+  background-color: white;
+  border-left: 1px solid #E3E3E3;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  min-height: 900px;
+  padding-top:55px;
+  padding-left: 40px;
+  min-width: 25em;
+  max-width: 33em;
+  font-size: 15px;
+  line-height: 23px;
+  float: left;
+}
+
+.page-header {
+  padding-bottom:0;
+  margin-bottom:10px;
+} 
+
+body {
+  margin: 0;
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  color: #2d2d2d;
+  background-color: #ffffff; }
+
+.articles p {
+  margin: 0;
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  color: #2d2d2d;
+  background-color: #ffffff; }
+
+ol {
+  list-style: none;
+}
+
+.date {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.pages h2 {
+  font-weight: bold;
+}
+
+.pages li {
+  margin-top: 30px;
+}
+
+.pages {
+  margin: 0;
+}
+
+h1.hellabig {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.social_nets {
+  list-style-type: none;
+  margin-left: 0;
+}
+.social_nets li {
+  cursor: pointer;
+  line-height: 30px;
+  height: 22px;
+  padding-left: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.social_nets li a {
+  color: #2d2d2d;
+}
+
+.social_nets li a:hover {
+  text-decoration:none;
+}
+
+.social_nets li [class^="icon-"],
+.social_nets li [class*=" icon-"] {
+  width: 32px;
+  font-size: 16px;
+}
+.social_nets li:hover {
+  background-color: #fbf4f4;
+}
+.social_nets li:hover [class^="icon-"],
+.social_nets li:hover [class*=" icon-"] {
+  *font-size: 24px;
+  *vertical-align: middle;
+}
+.social_nets li:hover [class^="icon-"]:before,
+.social_nets li:hover [class*=" icon-"]:before {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+#colophone {
+  text-align: center;
+}
+
+.footer {
+  background-color:black;
+}
