@@ -1,184 +1,181 @@
 .row
-  .span4
-    %section#welcome.main-content
-      .span4.page-header
+  %section#welcome.span4
+    .span4.page-header
+      %h1
+        Welcome
+    .span4
+    %p
+      Howdy.  My name is Cody Duval and Abstractly is the home of my programming persona.  It’s a virtual representation of my world as it relates to the narrow subject of coding and technology.  And it’s called Abstractly because, in the end, programming is really just about solving problems in a general (that is, abstract) way.
+    %p
+      I started teaching myself to code in the fall of 2011.  While I've always been somewhat technical, it wasn't until recently that I began pursuing programming as a more serious hobby.  I'm currently focused on learning Ruby on Rails and jQuery.
+    %p
+      On this page you'll find some information about the projects I'm working on, an admittedly subjective assessment of my technical skills, and some resources if you arrived here with a similar to learn to code.
+  %section#projects.span8
+    .span8.page-header
+      %h1
+        Recent Projects
+    .span8
+      #slidorion
+        #slider
+          #slide1.slide
+            %img.thumbnail{:src => "/ab_theme/img/broker-bot-thumb.png", :alt => "Broker Bot Thumbnail"}
+            %img.thumbnail{:src => "/ab_theme/img/broker-bot-thumb2.png", :alt => "Broker Bot Thumbnail"}
+          #slide2.slide
+            %img.thumbnail{:src => "/ab_theme/img/construction.jpg", :alt => "Card-er-ator Thumbnail"}
+          #slide3.slide
+            %img.thumbnail{:src => "/ab_theme/img/july-21-thumb1.png", :alt => "Card-er-ator Thumbnail"}
+            %img.thumbnail{:src => "/ab_theme/img/july-21-thumb2.png", :alt => "Card-er-ator Thumbnail"}
+        #accordion
+          .link-header
+            Broker Bot
+          .link-content
+            %p
+            Broker Bot automates the tedious (and unreliable) task of keeping track of communication between a real estate agent and his clients.  A copy of every email sent between broker and client is sent to the app, where it scans the email body for URLs referring to real estate listings.  If found, the app creates an entry for the new listing and pulls (scrapes) relevant data about the listing from the referring real estate website.
+            %ul
+              %li
+                Rails 3.2.3
+              %li
+                Heroku - hosting and deployment
+              %li
+                Nokogiri - HTML parsing
+              %li
+                Resque - Background job processing
+              %li
+                Postmark - Cloud-based inbound email parsing
+              %li
+                DataTables - jQuery table formatting
+          .link-header
+            Card-er-ator
+          .link-content
+            %p
+              Physically mailed postcards are still an incredibly effictive way to communicate.  The Card-er-ator allows anyone to compose and mail a physical postcard from their mobile phone or browswer. After users select their card design and compose their message, a third party service prints and mails the card for a nominal fee.  Screenshots to come as the app is currently in development.
+            %ul
+              %li
+                Rails 3.2.3
+              %li
+                Amazon Flexible Payments - Payment processing
+              %li
+                Resque - Background job processing
+          .link-header
+            C & L Get Married
+          .link-content
+            %p
+              July-21.com is a simple one-page wedding website for Cody & Lesley Duval.  It includes a custom built Shopify store for a wedding registry, jQuery powered forms, and a few other bells & whistles. The live website can be viewed at this link.
+            %ul
+              %li
+                Custom HTML wrapped in Sinatra
+              %li
+                Heroku - hosting & deployment
+              %li
+                Shopify - custom wedding registry
+              %li
+                jQuery - forms and page scrolling
+
+.row
+  %section#skills.span12
+    .span12.page-header
+      %h1
+        Skills & Talents
+    .row
+      .span7.well
+        %img#skills-graph{:src => "/ab_theme/img/hard-skills-proto11.png", :width =>"512", :height=>"298", :border => "0", :alt => "Skills Graph", :usemap => "#hard_skills_proto11_Map"}
+      #graph-caption.span3.well
+        #graph-caption-header
+        #graph-caption-text
+          %p#default-text
+            My liberal arts degree and career in advertising & marketing means I have a well developed set of "soft" skills.  On the technical side, I'm mostly self-taught.  Mouse over any particular skill for more detail.
+.row
+  .span6
+    %section#bio
+      .span6.page-header
         %h1
-          Welcome
-      .span4
+          Programming Bio
+      .span6
+        .headshot.pull-left
+          %img{:src => "/ab_theme/img/crd-headshot.png", :alt => "CRD Thumbnail"}
         %p
-          Howdy.  My name is Cody Duval and Abstractly is the home of my programming persona.  It’s a virtual representation of my world as it relates to the narrow subject of coding and technology.  And it’s called Abstractly because, in the end, programming is really just about solving problems in a general (that is, abstract) way.
+          My first exposure to a programming language was in elementary school (er, back in a decade that rhymes with "ladies"), where I used LOGO to create elaborate turtle art on green-monochrome Apple IIe's and Commodore 64s ('Load "*", 8, 1' anyone?).
         %p
-          I started teaching myself to code in the fall of 2011.  While I've always been somewhat technical, it wasn't until recently that I began pursuing programming as a more serious hobby.  I'm currently focused on learning Ruby on Rails and jQuery.
+          Later, high school brought with it PCs, 9600 baud modems, BBSes, and Pascal.  A liberal arts degree and career in advertising meant I largely missed Visual Basic, Java, and PHP, and it wasn't until 2010 that I opened up a text editor and taught myself HTML & CSS.
         %p
-          On this page you'll find some information about the projects I'm working on, an admittedly subjective assessment of my technical skills, and some resources if you arrived here with a similar to learn to code.
-  .span8
-    %section#projects.main-content
-      .span7.page-header
+          In the fall of 2011, I took General Assembly's 10-week Front End Web Developent Course.  I've since recommended the course to others and I think it's an amazing way to get up-to-speed on HTML, CSS, and Javascript in a relatively short amount of time.
+        %p
+          Finally, in February of 2012 I enrolled in Avi Flombaum's' 8-week Ruby on Rails intensive.  This, along with Michael Hartl's online tutorial, was enough to get me off the ground and building (simple) web apps.
+        %p
+          Since then, I've been working on a handful of personal projects (see above), and, as Jesse Farmer of Dev Bootcamp says, I try hard to 
+          %a{:href => "http://en.wikipedia.org/wiki/Shoshin", :target =>"_blank"} 
+            maintain a beginners mind
+          with each new subject.
+  .span6
+    %section#resources
+      .span6.page-header
         %h1
-          Recent Projects
-      .span7
-        #slidorion
-          #slider
-            #slide1.slide
-              %img.thumbnail{:src => "/ab_theme/img/broker-bot-thumb.png", :alt => "Broker Bot Thumbnail"}
-              %img.thumbnail{:src => "/ab_theme/img/broker-bot-thumb2.png", :alt => "Broker Bot Thumbnail"}
-            #slide2.slide
-              %img.thumbnail{:src => "/ab_theme/img/construction.jpg", :alt => "Card-er-ator Thumbnail"}
-            #slide3.slide
-              %img.thumbnail{:src => "/ab_theme/img/july-21-thumb1.png", :alt => "Card-er-ator Thumbnail"}
-              %img.thumbnail{:src => "/ab_theme/img/july-21-thumb2.png", :alt => "Card-er-ator Thumbnail"}
-          #accordion
-            .link-header
-              Broker Bot
-            .link-content
-              %p
-              Broker Bot automates the tedious (and unreliable) task of keeping track of communication between a real estate agent and his clients.  A copy of every email sent between broker and client is sent to the app, where it scans the email body for URLs referring to real estate listings.  If found, the app creates an entry for the new listing and pulls (scrapes) relevant data about the listing from the referring real estate website.
-              %ul
-                %li
-                  Rails 3.2.3
-                %li
-                  Heroku - hosting and deployment
-                %li
-                  Nokogiri - HTML parsing
-                %li
-                  Resque - Background job processing
-                %li
-                  Postmark - Cloud-based inbound email parsing
-                %li
-                  DataTables - jQuery table formatting
-            .link-header
-              Card-er-ator
-            .link-content
-              %p
-                Physically mailed postcards are still an incredibly effictive way to communicate.  The Card-er-ator allows anyone to compose and mail a physical postcard from their mobile phone or browswer. After users select their card design and compose their message, a third party service prints and mails the card for a nominal fee.  Screenshots to come as the app is currently in development.
-              %ul
-                %li
-                  Rails 3.2.3
-                %li
-                  Amazon Flexible Payments - Payment processing
-                %li
-                  Resque - Background job processing
-            .link-header
-              C & L Get Married
-            .link-content
-              %p
-                July-21.com is a simple one-page wedding website for Cody & Lesley Duval.  It includes a custom built Shopify store for a wedding registry, jQuery powered forms, and a few other bells & whistles. The live website can be viewed at this link.
-              %ul
-                %li
-                  Custom HTML wrapped in Sinatra
-                %li
-                  Heroku - hosting & deployment
-                %li
-                  Shopify - custom wedding registry
-                %li
-                  jQuery - forms and page scrolling
-  .row
-    .span12
-      %section#skills.main-content
-        .span11.page-header
-          %h1
-            Skills & Talents
-        .row
-          .span12
-            .span7.well
-              %img#skills-graph{:src => "/ab_theme/img/hard-skills-proto11.png", :width =>"512", :height=>"298", :border => "0", :alt => "Skills Graph", :usemap => "#hard_skills_proto11_Map"}
-            #graph-caption.span3.well
-              #graph-caption-header
-              #graph-caption-text
-                %p#default-text
-                  My liberal arts degree and career in advertising & marketing means I have a well developed set of "soft" skills.  On the technical side, I'm mostly self-taught.  Mouse over any particular skill for more detail.
-  .row
-    .span6
-      %section#bio.main-content
-        .span6.page-header
-          %h1
-            Programming Bio
-        .span6
-          .headshot.pull-left
-            %img{:src => "/ab_theme/img/crd-headshot.png", :alt => "CRD Thumbnail"}
-          %p
-            My first exposure to a programming language was in elementary school (er, back in a decade that rhymes with "ladies"), where I used LOGO to create elaborate turtle art on green-monochrome Apple IIe's and Commodore 64s ('Load "*", 8, 1' anyone?).
-          %p
-            Later, high school brought with it PCs, 9600 baud modems, BBSes, and Pascal.  A liberal arts degree and career in advertising meant I largely missed Visual Basic, Java, and PHP, and it wasn't until 2010 that I opened up a text editor and taught myself HTML & CSS.
-          %p
-            In the fall of 2011, I took General Assembly's 10-week Front End Web Developent Course.  I've since recommended the course to others and I think it's an amazing way to get up-to-speed on HTML, CSS, and Javascript in a relatively short amount of time.
-          %p
-            Finally, in February of 2012 I enrolled in Avi Flombaum's' 8-week Ruby on Rails intensive.  This, along with Michael Hartl's online tutorial, was enough to get me off the ground and building (simple) web apps.
-          %p
-            Since then, I've been working on a handful of personal projects (see above), and, as Jesse Farmer of Dev Bootcamp says, I try hard to 
-            %a{:href => "http://en.wikipedia.org/wiki/Shoshin", :target =>"_blank"} 
-              maintain a beginners mind
-            with each new subject.
-    .span6
-      %section#resources.main-content
-        .span6.page-header
-          %h1
-            Resources
-        .span6
-          %p
-            Learning to program is hard. Here are some resources that I found incredibly useful in my own journey.
-        #resource-list.span5
-          %h4
-            Online Tutorials
-          %ul
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Ruby on Rails Tutorial by Michael Hartl
-            %li
-              %a{:href => "http://www.codeschool.com/", :target => "_blank"}
-                Code School
-            %li
-              %a{:href => "http://teamtreehouse.com/", :target => "_blank"}
-                Treehouse
-          %h4
-            Books
-          %ul
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Agile Web Development with Rails
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                The Well Grounded Rubyist
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Learn to Program
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                HTML5 for Web Designers
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Eloquent Ruby
-          %h4
-            Podcasts & Screencasts
-          %ul
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Rails Casts
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Ruby Rogues
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Ruby Tapas
-          %h4
-            Bootcamps and In-Person Courses
-          %ul
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Dev Bootcamp (SF) 
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                General Assemb.ly (NYC)
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Big Nerd Ranch (GA)
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                The Starter League (Chicago)
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Boston Startup School
-            %li
-              %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
-                Hacker School (NYC)
+          Resources
+      .span6
+        %p
+          Learning to program is hard. Here are some resources that I found incredibly useful in my own journey.
+      #resource-list.span5
+        %h4
+          Online Tutorials
+        %ul
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Ruby on Rails Tutorial by Michael Hartl
+          %li
+            %a{:href => "http://www.codeschool.com/", :target => "_blank"}
+              Code School
+          %li
+            %a{:href => "http://teamtreehouse.com/", :target => "_blank"}
+              Treehouse
+        %h4
+          Books
+        %ul
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Agile Web Development with Rails
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              The Well Grounded Rubyist
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Learn to Program
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              HTML5 for Web Designers
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Eloquent Ruby
+        %h4
+          Podcasts & Screencasts
+        %ul
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Rails Casts
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Ruby Rogues
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Ruby Tapas
+        %h4
+          Bootcamps and In-Person Courses
+        %ul
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Dev Bootcamp (SF) 
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              General Assemb.ly (NYC)
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Big Nerd Ranch (GA)
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              The Starter League (Chicago)
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Boston Startup School
+          %li
+            %a{:href => "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book", :target => "_blank"}
+              Hacker School (NYC)
 = haml :skills_image_map, :layout => false
