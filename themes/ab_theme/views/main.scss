@@ -51,10 +51,14 @@
   text-align     :center;
 }
 
-.brand-icon {
-  margin-left:5px;
+#brand-icon {
+  margin-left:4px;
   position   :relative;
-  bottom     :-8px;
+  // bottom     :-8px;
+}
+
+#brand-icon a {
+  color: #2D2D2D;
 }
 
 @media (max-width: 979px) {
@@ -244,4 +248,9 @@ h1.hellabig {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+#blog_logo {
+  text-align: center;
+  margin-bottom: 20px;
 }
