@@ -11,8 +11,8 @@
   
 }
 #hero-inner {
-  margin-top: 5px;
-  height: 300px;
+  margin-top  : 5px;
+  height      : 300px;
   padding-left: 35px;
 }
 
@@ -50,7 +50,6 @@
 #brand-icon {
   margin-left:4px;
   position   :relative;
-  // bottom     :-8px;
 }
 
 #brand-icon a {
@@ -60,10 +59,10 @@
 @media (max-width: 979px) {
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
-    padding-top: 10px;
+    padding-top   : 10px;
     padding-bottom: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right : 10px;
+    padding-left  : 10px;
     }
     .navbar-fixed-top, .navbar-fixed-bottom {
   position: fixed;
@@ -95,12 +94,12 @@
  }
 
 #sidebar {
-  margin-top: 85px;
+  margin-top  : 85px;
   margin-right: 25px;
-  margin-left: 15px;
-  padding: 1%;
-  position: relative;
-  min-height: 100%;
+  margin-left : 15px;
+  padding     : 1%;
+  position    : relative;
+  min-height  : 100%;
 }
 
 #sidebar ul {
@@ -118,49 +117,47 @@
 
 #sidebar p {
   line-height: 18px;
-  margin: 0 0 0 1em;
+  margin     : 0 0 0 1em;
 }
 
 
 #main-blog-content {
-  // margin-left: 27%;
-  // min-width: 658px;
-  position: relative;
-  background-color: white;
-  border-left: 1px solid #E3E3E3;
-  backface-visibility: visible;
+  position                   : relative;
+  background-color           : white;
+  border-left                : 1px solid #E3E3E3;
+  backface-visibility        : visible;
   -webkit-backface-visibility: visible;
-  -moz-backface-visibility: visible;
-  min-height: 900px;
-  padding-top:55px;
-  padding-left: 40px;
-  min-width: 20em;
-  max-width: 33em;
-  font-size: 15px;
-  line-height: 23px;
-  float: left;
+  -moz-backface-visibility   : visible;
+  min-height                 : 900px;
+  padding-top                : 55px;
+  padding-left               : 40px;
+  min-width                  : 20em;
+  max-width                  : 33em;
+  font-size                  : 15px;
+  line-height                : 23px;
+  float                      : left;
 }
 
 .page-header {
   padding-bottom:0;
-  margin-bottom:10px;
+  margin-bottom :10px;
 } 
 
 body {
-  margin: 0;
-  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 23px;
-  color: #2d2d2d;
+  margin          : 0;
+  font-family     : "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size       : 14px;
+  line-height     : 23px;
+  color           : #2d2d2d;
   background-color: #ffffff; 
 }
 
 .articles p {
-  margin: 0;
-  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 23px;
-  color: #2d2d2d;
+  margin          : 0;
+  font-family     : "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size       : 15px;
+  line-height     : 23px;
+  color           : #2d2d2d;
   background-color: #ffffff; }
 
 ol {
@@ -168,9 +165,9 @@ ol {
 }
 
 .date {
-  padding-top: 5px;
+  padding-top   : 5px;
   padding-bottom: 5px;
-  font-weight: bold;
+  font-weight   : bold;
 }
 
 .pages h2 {
@@ -186,22 +183,22 @@ ol {
 }
 
 h1.hellabig {
-  font-size: 80px;
+  font-size  : 80px;
   font-weight: bold;
 }
 
 .social_nets {
   list-style-type: none;
-  margin-left: 0;
+  margin-left    : 0;
 }
 .social_nets li {
-  cursor: pointer;
-  line-height: 30px;
-  height: 22px;
-  padding-left: 12px;
+  cursor               : pointer;
+  line-height          : 30px;
+  height               : 22px;
+  padding-left         : 12px;
   -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius   : 12px;
+  border-radius        : 12px;
 }
 
 .social_nets li a {
@@ -209,12 +206,12 @@ h1.hellabig {
 }
 
 .social_nets li a:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .social_nets li [class^="icon-"],
 .social_nets li [class*=" icon-"] {
-  width: 32px;
+  width    : 32px;
   font-size: 16px;
 }
 .social_nets li:hover {
@@ -222,12 +219,12 @@ h1.hellabig {
 }
 .social_nets li:hover [class^="icon-"],
 .social_nets li:hover [class*=" icon-"] {
-  *font-size: 24px;
+  *font-size     : 24px;
   *vertical-align: middle;
 }
 .social_nets li:hover [class^="icon-"]:before,
 .social_nets li:hover [class*=" icon-"]:before {
-  font-size: 24px;
+  font-size     : 24px;
   vertical-align: middle;
 }
 
@@ -237,22 +234,22 @@ h1.hellabig {
 
 @media (max-width: 767px) {
   body {
-    padding-left: 0;
+    padding-left : 0;
     padding-right: 0;
   }
   #main-wrapper {
-    padding-left: 20px;
+    padding-left : 20px;
     padding-right: 20px;
   }
 }
 
 #blog_logo {
-  text-align: center;
+  text-align   : center;
   margin-bottom: 20px;
 }
 
 #footer {
    position:fixed;
-   left:0px;
-   bottom:0px;
+   left    :0px;
+   bottom  :0px;
 }
