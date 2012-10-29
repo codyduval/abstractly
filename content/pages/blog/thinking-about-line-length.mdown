@@ -3,8 +3,12 @@ Categories: blog/testing
 
 # Thinking About Line Length
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+1The endangered satellites fly pole-to-pole orbits and cross the Equator in the afternoon, scanning the whole planet one strip at a time. Along with orbiters on other timetables, they are among the most effective tools used to pin down the paths of major storms around five days ahead.
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+2All this week, forecasters have been relying on just such satellite observations for almost all of the data needed to narrow down what were at first widely divergent computer models of what Hurricane Sandy would do next: explode against the coast, or veer away into the open ocean?
+
+3Experiments show that without this kind of satellite data, forecasters would have underestimated by half the massive snowfall that hit Washington in the 2010 blizzard nicknamed “Snowmageddon.”
+
+4“We cannot afford to lose any enhancement that allows us to accurately forecast any weather event coming our way,” said Craig J. Craft, commissioner of emergency management for Nassau County, Long Island, where the great hurricane of 1938 hit without warning and killed hundreds. On Thursday, Mr. Craft was seeking more precise forecasts for the looming storm and gearing up for possible hospital and nursing home evacuations, as were ordered before Hurricane Irene last year. “Without accurate forecasts it is hard to know when to pull that trigger.”
 
 

@@ -1,19 +1,16 @@
 #main-blog-content.container.span8
-  - if @page.date
-    .date= format_date(@page.date)
+  %article(role="main")
+    ~ @page.to_html(self)
 
-  ~ @page.to_html(self)
+    %section.pages
+      = article_summaries(@page.pages)
 
-  = haml :summaries, :layout => false, :locals => { :pages => @page.pages, :heading => :h3 }
+    - unless @page.articles.empty?
+      %section.articles
+        %header
+          %h1= articles_heading
+        = article_summaries(@page.articles)
 
-  - unless @page.articles.empty?
-    %h2= "Articles on #{@page.heading}"
-    = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
-
-  - unless @page.categories.empty?
-    .categories
-      %strong Categories:
-      - @page.categories.each do |category|
-        %a{ :href => category.abspath }= category.heading
+    = haml :page_meta, :layout => false, :locals => { :page => @page }
 
   = haml :comments, :layout => false
